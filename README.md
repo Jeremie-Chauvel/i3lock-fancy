@@ -1,5 +1,5 @@
 # i3lock-fancy-multimonitor
-The idea for this project was shamelessly copied from [meskarune](https://github.com/meskarune)'s [i3lock-fancy](https://github.com/meskarune/i3lock-fancy).
+The idea for this project was shamelessly copied from [guimeira](https://github.com/guimeira)'s [i3lock-fancy-multimonitor](https://github.com/guimeira/i3lock-fancy-multimonitor)
 
 It uses [scrot](http://freecode.com/projects/scrot) to take a screenshot of the desktop, then [ImageMagick](http://www.imagemagick.org/) blurs the image and adds a lock icon and text.
 
@@ -17,7 +17,7 @@ sudo apt-get install scrot imagemagick i3lock
 Copy the `lock` script along with the images to some place on your system (e.g.: the i3 folder) and give it execution permission:
 
 ```
-git clone https://github.com/guimeira/i3lock-fancy-multimonitor.git
+git clone https://github.com/Jeremie-Chauvel/i3lock-fancy.git
 cp -r i3lock-fancy-multimonitor ~/.i3
 chmod +x ~/.i3/i3lock-fancy-multimonitor/lock
 ```
@@ -36,4 +36,4 @@ Now reload the i3 configuration file. By default, the key binding is `$mod+Shift
 
 `-p` or `--pixelate`: pixelate the background instead of blurring it. Might be faster.
 
-`-b` or `--blur`: the blur amount. See http://www.imagemagick.org/Usage/blur/#blur_args for valid values.
+`-b=2x6` or `--blur=`: the blur amount. See http://www.imagemagick.org/Usage/blur/#blur_args for valid values.
